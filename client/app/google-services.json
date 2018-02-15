@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "191613234604",
+    "firebase_url": "https://paposolar-e0487.firebaseio.com",
+    "project_id": "paposolar-e0487",
+    "storage_bucket": "paposolar-e0487.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:191613234604:android:a93ce57ab6d576f3",
+        "android_client_info": {
+          "package_name": "br.com.client.paposolar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "191613234604-88eslmpppqld61au9h51tv9am3sf2aff.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4fbZQJ3zxVlwYASiR6JhMSO36qrPKPg8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:191613234604:android:520feb6892994771",
+        "android_client_info": {
+          "package_name": "br.com.company.paposolar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "191613234604-88eslmpppqld61au9h51tv9am3sf2aff.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4fbZQJ3zxVlwYASiR6JhMSO36qrPKPg8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
