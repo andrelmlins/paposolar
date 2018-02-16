@@ -174,7 +174,6 @@ public class ConversaActivity extends AppCompatActivity implements Response.List
                 m.setMessageText(j.getString("texto"));
                 m.setMessageTime(Long.parseLong(j.getString("data")));
                 m.setId(Long.parseLong(j.getString("id")));
-                Log.e("TESTE",j.getString("email"));
                 if(j.getString("email").equals("contato@paposolar.com")){
                     m.setUserType(UserType.OTHER);
                 } else {

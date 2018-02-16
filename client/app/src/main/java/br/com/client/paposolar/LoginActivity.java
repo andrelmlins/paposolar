@@ -36,6 +36,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
             Bundle b = new Bundle();
             b.putSerializable("conversa",c);
             Intent intent = new Intent(this, ConversaActivity.class);
+            intent.putExtras(b);
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
             startActivity(intent);
             finish();
