@@ -18,8 +18,7 @@ import org.json.JSONObject;
 public class Requests {
     private static Requests mInstance;
     private RequestQueue mQueue;
-    //public static final String ROOT = "http://paposolar.000webhostapp.com";
-    public static final String ROOT = "http://35.184.178.70/paposolar";
+    public static final String ROOT = "http://35.229.119.213/paposolar";
 
     private Requests(Context context) {
         mQueue = Volley.newRequestQueue(context);

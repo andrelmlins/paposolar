@@ -7,6 +7,7 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -65,7 +66,7 @@ public class ConversaActivity extends AppCompatActivity implements Response.List
         this.conversa.setRoom(this.conversa.getId()+"_"+preferences.getString("id", ""));
         this.setTitle(this.conversa.getNomeUser());
         try {
-            mSocket = IO.socket("http://35.184.178.70:2020");
+            mSocket = IO.socket("http://35.229.119.213:2020");
         } catch (URISyntaxException e) {
             e.printStackTrace();
         }
@@ -86,6 +87,7 @@ public class ConversaActivity extends AppCompatActivity implements Response.List
         chatEditText1.setOnKeyListener(keyListener);
         enterChatView1.setOnClickListener(clickListener);
         //chatEditText1.addTextChangedListener(watcher1);
+
 
         this.r.getObject("/mensagem/sala/"+this.conversa.getRoom(), this, this);
     }
@@ -218,7 +220,7 @@ public class ConversaActivity extends AppCompatActivity implements Response.List
                             m.setMessageText(data.getString("texto"));
                             m.setMessageTime(Long.parseLong(data.getString("data")));
                             m.setUserType(UserType.SELF);
-                            chatMessages.add(m);
+                            if(chatMessages.contains(m)) chatMessages.add(m);
                         }
                     }
                 } catch (JSONException e) {
@@ -239,7 +241,6 @@ public class ConversaActivity extends AppCompatActivity implements Response.List
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present
         getMenuInflater().inflate(R.menu.menu_lista, menu);
         menu.findItem(R.id.info).setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
             @Override

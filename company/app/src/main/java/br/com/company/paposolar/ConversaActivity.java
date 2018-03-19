@@ -60,7 +60,7 @@ public class ConversaActivity extends AppCompatActivity implements Response.List
         this.conversa.setRoom(this.conversa.getId()+"_1");
         this.setTitle(this.conversa.getNomeUser());
         try {
-            mSocket = IO.socket("http://35.184.178.70:2020");
+            mSocket = IO.socket("http://35.229.119.213:2020");
         } catch (URISyntaxException e) {
             e.printStackTrace();
         }
@@ -213,7 +213,7 @@ public class ConversaActivity extends AppCompatActivity implements Response.List
                             m.setMessageText(data.getString("texto"));
                             m.setMessageTime(Long.parseLong(data.getString("data")));
                             m.setUserType(UserType.SELF);
-                            chatMessages.add(m);
+                            if(!chatMessages.contains(m)) chatMessages.add(m);
                         }
                     }
                 } catch (JSONException e) {

@@ -9,7 +9,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:theme="@style/AppTheme.AppBarOverlay">
-
         <android.support.v7.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
@@ -21,7 +20,7 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="40dp">
+        android:layout_marginTop="50dp">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -53,7 +52,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="20dp"
                 android:textSize="14sp"
-                android:text="Joule: Empresa que atua na área de geração de energia por fontes renováveis e tem por missão poupar 10.000 árvores até o ano de 2030, prezando sempre pela responsabilidade social e a vida humana."/>
+                android:text="Joule: Empresa que atua na área de geração de energia por fontes renováveis e tem por missão poupar 10.000 árvores até o ano de 2030, prezando sempre pela responsabilidade social e a vida."/>
             <com.codesgood.views.JustifiedTextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -77,7 +76,7 @@
                 android:layout_height="wrap_content"
                 android:autoLink="phone"
                 android:layout_marginBottom="5dp"
-                android:text="Fones: (81) 99521-2354 | (83) 98613-1263 | (83) 98716-2070"/>
+                android:text="Fones: (81) 99521-2354 | (81) 98572-2552 | (83) 98716-2070"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
